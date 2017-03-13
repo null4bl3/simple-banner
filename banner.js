@@ -4,6 +4,7 @@ var hour = dt.getHours();
 var minute = dt.getMinutes();
 var second = dt.getSeconds();
 var col = require("colors");
+
 var center = function(_string){
   return process.stdout.columns / 2 - _string.length / 2;
 };
@@ -25,7 +26,7 @@ var timer = function(){
   return "Time Updated: " + curr_hour + ":" + curr_min + ":" + curr_sec;
 };
 
-exports.set = function(app_name, rainbow){
+exports.set = function(app_name, additional, rainbow){
   console.log();
   for (var i = 0; i < process.stdout.columns; i++) {
     process.stdout.write(col.cyan("="));
@@ -53,6 +54,16 @@ exports.set = function(app_name, rainbow){
   }
   process.stdout.write(col.blue(" » ") + timer() + col.blue(" « "));
   console.log();
+
+  if (additional) {
+    console.log();
+    for (var z = 0; z < center(additional); z++) {
+      process.stdout.write(" ");
+    }
+    process.stdout.write(col.green(additional));
+    console.log();
+  }
+
   for (var v = 0; v < process.stdout.columns; v++) {
     process.stdout.write(col.cyan("="));
   }
