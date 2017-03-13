@@ -1,6 +1,6 @@
 {
     "name": "simple-banner",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A simple node.js banner display for the console.",
     "main": "banner.js",
     "scripts": {
