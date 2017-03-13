@@ -6,14 +6,18 @@ set("app name", "additional info", rainbow boolean)
 
 Either require the module as a variable and use the .set function:
 
+```javascript
 var banner = require('simple-banner');
 banner.set("The Amazing Application", 0, 0);
+```
 
 ("The Amazing Application" being the name of your application)
 
 Or you do it all in one line:
 
+```javascript
 require('simple-banner').set("The Amazing Application", 0, 0);
+```
 
 The module takes two optional parameters besides the application name.
 The first is any additional information you wish to display in the banner.
@@ -25,6 +29,9 @@ The second is a boolean value that decides if the application title is going to 
 Should you wish to have the application name utilize the rainbow print function,
 simply add a true boolean as the last parameter in the function call:
 
+```javascript
 require('simple-banner').set("The Amazing Application", 0, 1);
+```
+
 
 ![rainbow option](https://github.com/null4bl3/simple-banner/raw/master/Screenshot1.png)
