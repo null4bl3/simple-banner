@@ -30,7 +30,7 @@ exports.set = function(app_name, additional, rainbow) {
     additional = "";
   }
   if(!rainbow) {
-    rainbow = 0;
+    rainbow = Math.floor(Math.random() * 2);
   }
   console.log();
   for (let i = 0; i < process.stdout.columns; i++) {
