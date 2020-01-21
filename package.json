@@ -4,7 +4,7 @@
     "description": "A simple node.js banner display for the console.",
     "main": "banner.js",
     "scripts": {
-        "test": "mocha test.js",
+        "test": "mocha test.js && mocha test.js --reporter mocha-badge-generator",
         "start": "node banner.js"
     },
     "repository": {
@@ -24,6 +24,7 @@
     ],
     "devDependencies": {
         "chai": "^4.2.0",
-        "mocha": "^7.0.0"
+        "mocha": "^7.0.0",
+        "mocha-badge-generator": "^0.4.0"
     }
 }
