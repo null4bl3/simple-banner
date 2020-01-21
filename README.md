@@ -1,5 +1,8 @@
 A simple node.js banner display for the console.
 
+The module displays a optional project name, additional optional extended information as well as the file being run, and the time the process was started.
+
+Aiming for a minimum of requirements by only using the tiny [colors](https://www.npmjs.com/package/colors) npm module.
 
 The module contains a single function named set.
 set("app name", "additional info", rainbow boolean)
@@ -32,6 +35,5 @@ simply add a true boolean as the last of three parameter in the function call:
 ```javascript
 require('simple-banner').set("The Amazing Application", "", 1);
 ```
-
 
 ![rainbow option](https://github.com/null4bl3/simple-banner/raw/master/Screenshot1.png)
