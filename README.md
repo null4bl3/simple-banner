@@ -10,7 +10,7 @@ set("app name", "additional info", rainbow boolean)
 Either require the module as a variable and use the .set function:
 
 ```javascript
-var banner = require('simple-banner');
+let banner = require('simple-banner');
 banner.set("The Amazing Application");
 ```
 
