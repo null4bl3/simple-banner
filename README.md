@@ -8,7 +8,7 @@ Either require the module as a variable and use the .set function:
 
 ```javascript
 var banner = require('simple-banner');
-banner.set("The Amazing Application", 0, 0);
+banner.set("The Amazing Application");
 ```
 
 ("The Amazing Application" being the name of your application)
@@ -16,7 +16,7 @@ banner.set("The Amazing Application", 0, 0);
 Or you do it all in one line:
 
 ```javascript
-require('simple-banner').set("The Amazing Application", 0, 0);
+require('simple-banner').set("The Amazing Application");
 ```
 
 The module takes two optional parameters besides the application name.
@@ -27,10 +27,10 @@ The second is a boolean value that decides if the application title is going to 
 
 
 Should you wish to have the application name utilize the rainbow print function,
-simply add a true boolean as the last parameter in the function call:
+simply add a true boolean as the last of three parameter in the function call:
 
 ```javascript
-require('simple-banner').set("The Amazing Application", 0, 1);
+require('simple-banner').set("The Amazing Application", "", 1);
 ```
 
 
