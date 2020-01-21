@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/simple-banner.svg)](https://badge.fury.io/js/simple-banner)
+
 A simple node.js banner display for the console.
 
 The module displays a optional project name, additional optional extended information as well as the file being run, and the time the process was started.
