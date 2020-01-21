@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/simple-banner.svg)](https://badge.fury.io/js/simple-banner)
+![Test](https://raw.githubusercontent.com/null4bl3/simple-banner/master/test/badge.svg?sanitize=true)
 
 A simple node.js banner display for the console.
 
